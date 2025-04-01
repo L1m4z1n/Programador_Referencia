@@ -1,0 +1,24 @@
+Verificar se um número é primo
+Escreva um programa que recebe um número e verifica se ele é primo ou não.
+
+Fatorial de um número
+Crie uma função que calcula o fatorial de um número n (n! = n * (n-1) * (n-2) * ... * 1).
+
+Ordenar um vetor
+Escreva um programa que recebe um vetor de números inteiros e ordena ele em ordem crescente.
+
+Inverter um Array
+
+Crie uma função que inverta um array, ou seja, faça o último elemento se tornar o primeiro e assim por diante.
+
+Buscar Elemento em um Array
+
+Implemente uma função que recebe um array e um número, e retorne o índice da primeira ocorrência desse número no array. Caso o número não exista, retorne -1.
+
+Verificar se um Array é Palíndromo
+
+Crie uma função que verifique se um array de números é um palíndromo (se o array for o mesmo lido da esquerda para a direita e da direita para a esquerda).
+
+Função de Média
+
+Crie uma função que receba um array de números e calcule a média aritmética dos elementos.

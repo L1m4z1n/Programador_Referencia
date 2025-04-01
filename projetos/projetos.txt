@@ -1,0 +1,72 @@
+Nível Básico
+Conversor de Temperatura
+
+Crie um programa que converta a temperatura fornecida pelo usuário entre Celsius, Fahrenheit e Kelvin.
+
+Desafio adicional: Use funções para cada conversão.
+
+Calculadora de IMC (Índice de Massa Corporal)
+
+Crie um programa que receba o peso e a altura do usuário e calcule o IMC.
+
+Fórmula do IMC: IMC = peso / altura²
+
+Contador de Palavras
+
+Crie um programa que receba uma frase do usuário e conte quantas palavras ela contém.
+
+Desafio adicional: Use uma função para contar as palavras.
+
+Controle de Estoque Simples
+
+Implemente um sistema simples que armazena produtos em um array (nome, preço, quantidade) e permita o cadastro, visualização e remoção de produtos.
+
+Nível Intermediário
+Jogo da Forca
+
+Crie o jogo da forca onde o usuário tenta adivinhar uma palavra.
+
+Desafio adicional: Utilize arrays para armazenar as letras da palavra e as tentativas.
+
+Agenda Telefônica
+
+Implemente um sistema de cadastro de contatos (nome, telefone e e-mail) usando arrays.
+
+Funcionalidades: Adicionar, listar, buscar e remover contatos.
+
+Conversor de Moedas
+
+Crie um programa que converta um valor em reais para outras moedas (ex: dólar, euro, libra).
+
+Desafio adicional: Use funções para cada conversão e armazene as taxas de conversão em um array.
+
+Média de Notas de Alunos
+
+Crie um sistema para registrar as notas dos alunos em várias disciplinas e calcular a média de cada um.
+
+Desafio adicional: Use arrays para armazenar as notas e uma função para calcular a média.
+
+Nível Avançado
+Sistema de Biblioteca
+
+Crie um sistema que gerencie livros em uma biblioteca (cadastrar livros, verificar disponibilidade, emprestar livros).
+
+Funcionalidades: Cada livro terá título, autor, status de disponibilidade e data de empréstimo.
+
+Jogo de Adivinhação de Números
+
+Implemente um jogo onde o computador escolhe um número aleatório e o usuário tem que adivinhar.
+
+Desafio adicional: Mostre quantos palpites o usuário levou até acertar.
+
+Sistema de Notificação de Eventos
+
+Crie um sistema que gerencie eventos, permitindo ao usuário adicionar eventos (com título, data e descrição) e visualizar todos os eventos futuros.
+
+Desafio adicional: Ordene os eventos pela data e mostre uma notificação se um evento estiver próximo.
+
+Simulador de Caixa Eletrônico
+
+Implemente um sistema de caixa eletrônico que permita ao usuário realizar operações como sacar e depositar dinheiro.
+
+Funcionalidades: Cada conta tem um saldo, e o sistema deve controlar o saldo após cada operação.

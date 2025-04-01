@@ -1,0 +1,24 @@
+Imprimir números de 1 a 100
+Escreva um programa que imprime todos os números de 1 a 100.
+
+Somar os números de 1 a N
+Escreva um programa que recebe um número N e imprime a soma de todos os números de 1 a N.
+
+Tabuada
+Crie um programa que recebe um número e imprime a tabuada desse número de 1 até 10.
+
+Soma de Elementos de um Array
+
+Crie um programa que receba um array de números e calcule a soma de todos os seus elementos.
+
+Máximo e Mínimo em um Array 
+
+Receba um array de números e imprima o maior e o menor valor presente nele.
+
+Contar Ocorrências de um Elemento
+
+Crie uma função que receba um array e um valor, e retorne quantas vezes esse valor aparece no array.
+
+Imprimir os Elementos de um Array
+
+Crie uma função que imprima todos os elementos de um array um por um.

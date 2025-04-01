@@ -1,0 +1,92 @@
+Nível Básico (POO)
+Cadastro de Pessoa
+
+Crie uma classe Pessoa com atributos como nome, idade e endereço.
+
+Funcionalidades: Defina métodos para exibir as informações de uma pessoa e atualizar a idade.
+
+Controle de Carro
+
+Crie uma classe Carro com atributos como modelo, ano, cor e placa.
+
+Funcionalidades: Defina métodos como ligar(), desligar(), acelerar(), etc.
+
+Livro
+
+Crie uma classe Livro com atributos como título, autor, ano de publicação e páginas.
+
+Funcionalidades: Adicione um método para exibir as informações do livro e outro para calcular quantas páginas faltam para terminar o livro, dado o número de páginas lidas.
+
+Retângulo
+
+Crie uma classe Retângulo com atributos largura e altura.
+
+Funcionalidades: Adicione métodos para calcular a área e o perímetro do retângulo.
+
+Nível Intermediário (POO)
+Sistema Bancário Simples
+
+Crie uma classe ContaBancária com atributos como saldo e titular.
+
+Funcionalidades: Adicione métodos para depositar(), sacar(), e verificarSaldo(). Implemente também um método para transferir dinheiro entre contas.
+
+Cadastro de Produtos
+
+Crie uma classe Produto com atributos como nome, preço e quantidade em estoque.
+
+Funcionalidades: Adicione métodos para atualizar a quantidade, aplicar descontos e calcular o valor total em estoque.
+
+Sistema de Notificação
+
+Crie uma classe Notificacao que tenha os atributos mensagem, data e lido.
+
+Funcionalidades: Implemente métodos para marcar como lida, exibir a notificação e verificar se ela foi lida.
+
+Sistema de Alunos
+
+Crie uma classe Aluno com atributos como nome, matrícula e notas.
+
+Funcionalidades: Implemente métodos para calcular a média das notas e verificar se o aluno foi aprovado ou reprovado.
+
+Nível Avançado (POO)
+Sistema de Biblioteca Avançado
+
+Crie uma classe Livro e uma classe Cliente para um sistema de biblioteca.
+
+Funcionalidades: O Cliente pode emprestar e devolver livros. O Livro pode ter informações como título, autor, status (disponível ou emprestado). Implemente herança para diferentes tipos de livros e métodos polimórficos para gerenciar a devolução.
+
+Sistema de E-commerce
+
+Crie uma classe Produto com atributos como nome, preço, quantidade, e uma classe CarrinhoDeCompras que tenha um array de Produto.
+
+Funcionalidades: Implemente métodos como adicionarProduto(), removerProduto(), calcularTotal(), e aplicarDesconto().
+
+Simulador de Jogo (Jogo de Cartas, RPG, etc.)
+
+Crie uma classe Jogador com atributos como nome, vida, poder, e habilidades.
+
+Funcionalidades: Adicione métodos para atacar, defender e interagir com outros jogadores. Utilize herança para criar tipos diferentes de jogadores, como Guerreiro e Mago, e polimorfismo para implementar habilidades especiais.
+
+Sistema de Gerenciamento de Funcionários
+
+Crie uma classe Funcionario com atributos como nome, salário, cargo.
+
+Funcionalidades: Crie subclasses como Gerente, Assistente e Estagiário, e adicione métodos para calcular bônus de cada tipo de funcionário, com sobrecarga de métodos (polimorfismo).
+
+Princípios de POO a serem praticados nesses projetos:
+Encapsulamento:
+
+Controlar o acesso aos dados (uso de modificadores de acesso como private, public).
+
+Herança:
+
+Criar classes base e derivadas para reutilizar código e adicionar funcionalidades específicas.
+
+Polimorfismo:
+
+Permitir que métodos com o mesmo nome se comportem de maneira diferente dependendo do contexto.
+
+Abstração:
+
+Criar uma interface clara, ocultando detalhes desnecessários da implementação.
+

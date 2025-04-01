@@ -1,0 +1,24 @@
+Palíndromo
+Crie uma função que recebe uma string e retorna true se ela for um palíndromo (se pode ser lida da mesma forma de trás para frente), ou false caso contrário.
+
+Calculadora simples
+Crie uma calculadora que faça as operações de soma, subtração, multiplicação e divisão, recebendo os números e a operação do usuário.
+
+Contagem de vogais e consoantes
+Escreva um programa que recebe uma string e conta quantas vogais e consoantes ela contém.
+
+Ordenar um Array
+
+Crie uma função que ordene um array de números em ordem crescente.
+
+Média de Números Positivos
+
+Crie uma função que receba um array de números e calcule a média apenas dos números positivos presentes nele.
+
+Remover Elementos Duplicados
+
+Implemente uma função que recebe um array e remova todos os elementos duplicados, retornando um novo array com os valores únicos.
+
+Mesclar Dois Arrays
+
+Crie uma função que mescle dois arrays em um só, garantindo que os elementos dos dois arrays estejam ordenados ao final.
