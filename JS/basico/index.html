@@ -8,6 +8,9 @@ Crie uma página com uma lista ordenada (numerada) e uma lista não ordenada (bu
 3-
 Criar uma tabela simples
 Crie uma tabela com 3 colunas e 4 linhas. Adicione dados fictícios e cabeçalhos para as colunas.
+4-
+Formulário de contato básico
+Crie um formulário com campos para nome, email e uma mensagem, com um botão para enviar.
 -->
 
 <!DOCTYPE html>
@@ -59,7 +62,67 @@ Crie uma tabela com 3 colunas e 4 linhas. Adicione dados fictícios e cabeçalho
             </ul>
         </div>
     </div>
-
+    <!--
+    3-
+    -->
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            letter-spacing: 1px;
+        }
+        caption {
+  caption-side: top;
+  padding: 10px;
+  font-weight: bold;
+}
+th,td{
+    border: 2px solid black;
+    padding: 8px 10px;
+}
+tbody > tr:hover {
+  background-color: rgb(0, 48, 238);
+}
+    </style>
+        <section class="table">
+            <table>
+            <caption>Exercicio 3</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Area de Estudo</th>
+                    <th scope="col">Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Gabriel</th>
+                    <td>Engenharia de Software</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nicolle</th>
+                    <td>Psicologia</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lima</th>
+                    <td>Biblioteconomia</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Esther</th>
+                    <td>Desing</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+    <!--
+    4-
+    -->
     
 </body>
 </html>
