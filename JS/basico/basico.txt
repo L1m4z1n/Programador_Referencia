@@ -1,0 +1,36 @@
+Nível Iniciante
+HTML
+Criar uma página simples
+Crie uma página HTML com título, um parágrafo e uma imagem. Adicione um link para um site externo.
+
+Criar uma lista de itens
+Crie uma página com uma lista ordenada (numerada) e uma lista não ordenada (bullets), contendo ao menos 5 itens em cada lista.
+
+Criar uma tabela simples
+Crie uma tabela com 3 colunas e 4 linhas. Adicione dados fictícios e cabeçalhos para as colunas.
+
+Formulário de contato básico
+Crie um formulário com campos para nome, email e uma mensagem, com um botão para enviar.
+
+CSS
+Estilizar texto
+Altere a cor, tamanho da fonte e o estilo (negrito, itálico) de um parágrafo em sua página HTML.
+
+Alterar fundo da página
+Defina uma cor de fundo para a página, usando o código hexadecimal ou nome da cor.
+
+Estilizar listas
+Estilize uma lista não ordenada com bullets personalizados (exemplo: círculos, quadrados).
+
+Alinhar texto
+Alinhe um texto ao centro, à esquerda e à direita.
+
+JavaScript
+Exibir mensagem com alert()
+Crie um script que mostre uma mensagem usando a função alert() quando o usuário clicar em um botão.
+
+Alterar conteúdo de um elemento
+Crie um script que altere o conteúdo de um parágrafo quando o usuário clicar em um botão.
+
+Mostrar data e hora atuais
+Crie um script que exiba a data e hora atual em um formato legível.

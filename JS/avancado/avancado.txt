@@ -1,0 +1,30 @@
+Nível Avançado
+HTML
+Criar uma página com Modal
+Crie uma página que tenha um botão que, ao ser clicado, exiba uma janela modal com conteúdo personalizado.
+
+Formulário com múltiplas etapas
+Crie um formulário dividido em várias etapas, onde o usuário preenche uma parte do formulário e, ao clicar em "próximo", ele avança para a próxima parte.
+
+Usar SVGs em HTML
+Crie uma página que use gráficos vetoriais (SVGs) para criar ícones ou formas personalizadas.
+
+CSS
+Criar um layout responsivo
+Crie um layout responsivo usando media queries, de modo que a página se ajuste adequadamente a diferentes tamanhos de tela (desktop, tablet, celular).
+
+Design com Grid Layout
+Crie um layout de página complexa utilizando o CSS Grid Layout, com áreas de cabeçalho, navegação, conteúdo principal e rodapé.
+
+Animação avançada com CSS
+Crie uma animação avançada que combine transições, rotações e mudanças de escala de um elemento.
+
+JavaScript
+CRUD (Create, Read, Update, Delete) com localStorage
+Crie uma aplicação simples de CRUD que permita ao usuário adicionar, editar e excluir itens de uma lista. Utilize localStorage para salvar as informações entre as sessões.
+
+Gerenciador de Tarefas com Armazenamento Local
+Crie uma aplicação de gerenciamento de tarefas que permita adicionar, editar, excluir e marcar tarefas como concluídas, utilizando localStorage para armazenar as tarefas.
+
+Jogo interativo com JavaScript
+Crie um jogo simples (exemplo: jogo da velha, memória, adivinhação de número) que use eventos de clique e lógica para controlar o fluxo do jogo.

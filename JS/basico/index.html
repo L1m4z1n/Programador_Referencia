@@ -1,0 +1,65 @@
+<!--
+1-
+Criar uma página simples
+Crie uma página HTML com título, um parágrafo e uma imagem. Adicione um link para um site externo.
+2-
+Criar uma lista de itens
+Crie uma página com uma lista ordenada (numerada) e uma lista não ordenada (bullets), contendo ao menos 5 itens em cada lista.
+3-
+Criar uma tabela simples
+Crie uma tabela com 3 colunas e 4 linhas. Adicione dados fictícios e cabeçalhos para as colunas.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico</title>
+</head>
+<body>
+    <h1>Eu sou o Gabriel</h1>
+    <p>Este na imagem sou eu!</p>
+    <img src="imagens/Gabriel.jpeg" alt="Gabriel" width="200px" height="250px">
+    <!--
+    2-
+    -->
+    <div class="lista">
+        <style>
+            div.lista{
+                display: flex;
+                flex-direction: column;
+            }
+            .listas{
+                display: flex;
+                gap:20px;
+            }
+             ul, ol{
+                margin: 0px;
+                padding: 0px;
+                list-style-position: inside;
+            }
+
+        </style>
+        <h2>Dez caracteristicas:</h2> <br>
+        <div class="listas">
+            <ol>
+                <li>Proativo</li>
+                <li>Esforçado</li>
+                <li>Feliz</li>
+                <li>Familia</li>
+                <li>Disciplinado</li>
+            </ol>
+            <ul>
+                <li>Autodidata</li>
+                <li>Curioso</li>
+                <li>Sociavel</li>
+                <li>Paciente</li>
+                <li>Ousado</li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
