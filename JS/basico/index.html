@@ -11,6 +11,16 @@ Crie uma tabela com 3 colunas e 4 linhas. Adicione dados fictícios e cabeçalho
 4-
 Formulário de contato básico
 Crie um formulário com campos para nome, email e uma mensagem, com um botão para enviar.
+5-
+CSS
+Estilizar texto
+Altere a cor, tamanho da fonte e o estilo (negrito, itálico) de um parágrafo em sua página HTML.
+6-
+Alterar fundo da página
+Defina uma cor de fundo para a página, usando o código hexadecimal ou nome da cor.
+7-
+Estilizar listas
+Estilize uma lista não ordenada com bullets personalizados (exemplo: círculos, quadrados).
 -->
 
 <!DOCTYPE html>
@@ -20,6 +30,12 @@ Crie um formulário com campos para nome, email e uma mensagem, com um botão pa
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Básico</title>
 </head>
+<style>
+body {
+    background-color: #000;
+    color: white;
+}
+</style>
 <body>
     <h1>Eu sou o Gabriel</h1>
     <p>Este na imagem sou eu!</p>
@@ -41,6 +57,7 @@ Crie um formulário com campos para nome, email e uma mensagem, com um botão pa
                 margin: 0px;
                 padding: 0px;
                 list-style-position: inside;
+                list-style-type: circle;
             }
 
         </style>
@@ -72,6 +89,8 @@ Crie um formulário com campos para nome, email e uma mensagem, com um botão pa
             font-family: Arial, Helvetica, sans-serif;
             font-size: 0.8em;
             letter-spacing: 1px;
+            background-color: bisque;
+            color: black;
         }
         caption {
   caption-side: top;
@@ -123,6 +142,92 @@ tbody > tr:hover {
     <!--
     4-
     -->
-    
+    <style>
+        form {
+            /*centraliza*/
+            margin: 0 auto;
+            width: 400px;
+            /*Ver as bordas*/
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+            background-color: aliceblue;
+        }
+        form div+div {
+            margin-top: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input,textarea{
+            font: 1em arial;
+            width: 300px;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus {
+            /* Dar um pouco de destaque nos elementos ativos */
+            border-color: #000;
+        }
+        textarea {
+            /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+            vertical-align: top;
+
+            /* Para dar espaço suficiente para digitar algum texto */
+            height: 5em;
+
+            /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+            resize: vertical;
+        }
+        .button {
+  /* Para posicionar os botões para a mesma posição dos campos de texto */
+  padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+}
+button {
+  /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+  margin-left: 0.5em;
+}
+    </style>
+    <form id="form">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Insira seu email">
+        </div>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea name="msg" id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <div id="dados"></div>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Previne o comportamento padrão do formulário (recarregar a página)
+       
+        const nome = document.getElementById("nome").value
+        const email = document.getElementById("email").value
+        const msg = document.getElementById("msg").value
+        const envios = document.getElementById("dados")
+        envios.innerHTML=
+        `<h3>Dados Enviados:</h3>
+        <p><strong>Nome:</strong> ${nome}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Mensagem:</strong> ${msg}</p>`
+    })
+    </script>
+    <!--
+    5-
+    -->
+
 </body>
 </html>
