@@ -1,0 +1,24 @@
+Nível Intermediário (POO)
+Sistema Bancário Simples
+
+Crie uma classe ContaBancária com atributos como saldo e titular.
+
+Funcionalidades: Adicione métodos para depositar(), sacar(), e verificarSaldo(). Implemente também um método para transferir dinheiro entre contas.
+
+Cadastro de Produtos
+
+Crie uma classe Produto com atributos como nome, preço e quantidade em estoque.
+
+Funcionalidades: Adicione métodos para atualizar a quantidade, aplicar descontos e calcular o valor total em estoque.
+
+Sistema de Notificação
+
+Crie uma classe Notificacao que tenha os atributos mensagem, data e lido.
+
+Funcionalidades: Implemente métodos para marcar como lida, exibir a notificação e verificar se ela foi lida.
+
+Sistema de Alunos
+
+Crie uma classe Aluno com atributos como nome, matrícula e notas.
+
+Funcionalidades: Implemente métodos para calcular a média das notas e verificar se o aluno foi aprovado ou reprovado.

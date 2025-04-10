@@ -21,6 +21,19 @@ Defina uma cor de fundo para a página, usando o código hexadecimal ou nome da 
 7-
 Estilizar listas
 Estilize uma lista não ordenada com bullets personalizados (exemplo: círculos, quadrados).
+8-
+Alinhar texto
+Alinhe um texto ao centro, à esquerda e à direita.
+9-
+JavaScript
+Exibir mensagem com alert()
+Crie um script que mostre uma mensagem usando a função alert() quando o usuário clicar em um botão.
+10-
+Alterar conteúdo de um elemento
+Crie um script que altere o conteúdo de um parágrafo quando o usuário clicar em um botão.
+11-
+Mostrar data e hora atuais
+Crie um script que exiba a data e hora atual em um formato legível.
 -->
 
 <!DOCTYPE html>
@@ -34,6 +47,9 @@ Estilize uma lista não ordenada com bullets personalizados (exemplo: círculos,
 body {
     background-color: #000;
     color: white;
+}
+p {
+    text-align: center;
 }
 </style>
 <body>
@@ -226,8 +242,75 @@ button {
     })
     </script>
     <!--
-    5-
+    9-
     -->
+<button type="button" id="alert">Gera Alert()</button>
+<script>
+   document.getElementById("alert").addEventListener("click", function() {
+    window.alert("Você apertou no botão!!")
+   })
+</script>
+    <!--
+    10-
+    -->
+    <h3>Troca de Conteúdo</h3>
+    <div id="einstein">
+        <p>
+            Albert Einstein, o famoso físico, nasceu no dia 14 de março de 1879 em Ulm, Alemanha, onde passou seu primeiro ano de vida. Em 1880, ele se mudou com seus pais para Munique, onde viveu por 14 anos. Em 1888, começou a frequentar a escola Luitpold, onde mostrou ter grandes habilidades para as ciências naturais. Jacob Einstein, seu tio, foi uma figura muito importante em sua juventude, porque juntos realizaram muitos experimentos na oficina-laboratório que estava na casa de Albert.
+        </p>
+    </div>
+    <button type="button" id="troca">Trocar</button>
+    <script>
+        let iseinstein =true
+        document.getElementById("troca").addEventListener("click", function() {
+           let p1=document.getElementById("einstein")
+           if (iseinstein) {
+            p1.innerHTML = `<p>Maria estava dormindo muito tranquilamente até que foi acordada por um barulho. Ela abriu os olhos e saiu da cama para ver o que a tinha despertado, mas estava sozinha e não conseguia pensar o que era o barulho. De repente, ela se lembrou que tinha deixado a janela da sala aberta. Foi até a sala, fechou-a e voltou para a cama para dormir. </p>`
+           } else {
+             p1.innerHTML = `<p>Albert Einstein, o famoso físico, nasceu no dia 14 de março de 1879 em Ulm, Alemanha, onde passou seu primeiro ano de vida. Em 1880, ele se mudou com seus pais para Munique, onde viveu por 14 anos. Em 1888, começou a frequentar a escola Luitpold, onde mostrou ter grandes habilidades para as ciências naturais. Jacob Einstein, seu tio, foi uma figura muito importante em sua juventude, porque juntos realizaram muitos experimentos na oficina-laboratório que estava na casa de Albert. </p>`
+           }
+            iseinstein =! iseinstein 
+        })
+    </script>
+    <!--
+    11-
+    -->
+    <!--
+    - getDate()
+Retorna o dia do mês (1 a 31) da data atual. Exemplo: se hoje é dia 9, ele retorna 9.
+- getMonth()
+Retorna o número do mês (0 a 11). Aqui, janeiro é representado por 0, fevereiro por 1 e assim por diante. Por isso, adiciono +1 para e
 
+-getFullYear()
+Retorna o ano completo(por exemplo, 2025)
+
+-getHours()
+Retorna a hora atual no formato de 24 horas (0 a 23). Se for 21h, ele retona 21.
+
+-getMinutes()
+Retorna os minutos da hora atual(0 a 59).
+
+-getSeconds()
+Retorna os segundos da hora atual(0 a 59).
+
+-padStart(2,'0')
+Usada para garantir que números com apenas um digito(como 9 para o dia ou 3 para os minutos) tenham sempre dois digitos. Ele adiciona um 0 à esquerda, como transformar 9 em 09.
+    -->
+<h3>Data e Hora atual</h3>
+<div id="res">
+
+</div>
+<script>
+    var data = new Date()
+    let p =document.getElementById("res")
+
+    let dia=data.getDate().toString().padStart(2,'0')
+    let mes=(data.getMonth()+1).toString().padStart(2,'0')
+    let ano = data.getFullYear()
+    let hora = data.getHours().toString().padStart(2,'0')
+    let minutos = data.getMinutes().toString().padStart(2,'0')
+    let segundos = data.getSeconds().toString().padStart(2,'0')
+    p.innerHTML = `${dia}/${mes}/${ano} ${hora}:${minutos}:${segundos}`
+</script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+Nível Básico (POO)
+Cadastro de Pessoa
+
+Crie uma classe Pessoa com atributos como nome, idade e endereço.
+
+Funcionalidades: Defina métodos para exibir as informações de uma pessoa e atualizar a idade.
+
+Controle de Carro
+
+Crie uma classe Carro com atributos como modelo, ano, cor e placa.
+
+Funcionalidades: Defina métodos como ligar(), desligar(), acelerar(), etc.
+
+Livro
+
+Crie uma classe Livro com atributos como título, autor, ano de publicação e páginas.
+
+Funcionalidades: Adicione um método para exibir as informações do livro e outro para calcular quantas páginas faltam para terminar o livro, dado o número de páginas lidas.
+
+Retângulo
+
+Crie uma classe Retângulo com atributos largura e altura.
+
+Funcionalidades: Adicione métodos para calcular a área e o perímetro do retângulo.

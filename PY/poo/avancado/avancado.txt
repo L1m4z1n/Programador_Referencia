@@ -1,0 +1,41 @@
+Nível Avançado (POO)
+Sistema de Biblioteca Avançado
+
+Crie uma classe Livro e uma classe Cliente para um sistema de biblioteca.
+
+Funcionalidades: O Cliente pode emprestar e devolver livros. O Livro pode ter informações como título, autor, status (disponível ou emprestado). Implemente herança para diferentes tipos de livros e métodos polimórficos para gerenciar a devolução.
+
+Sistema de E-commerce
+
+Crie uma classe Produto com atributos como nome, preço, quantidade, e uma classe CarrinhoDeCompras que tenha um array de Produto.
+
+Funcionalidades: Implemente métodos como adicionarProduto(), removerProduto(), calcularTotal(), e aplicarDesconto().
+
+Simulador de Jogo (Jogo de Cartas, RPG, etc.)
+
+Crie uma classe Jogador com atributos como nome, vida, poder, e habilidades.
+
+Funcionalidades: Adicione métodos para atacar, defender e interagir com outros jogadores. Utilize herança para criar tipos diferentes de jogadores, como Guerreiro e Mago, e polimorfismo para implementar habilidades especiais.
+
+Sistema de Gerenciamento de Funcionários
+
+Crie uma classe Funcionario com atributos como nome, salário, cargo.
+
+Funcionalidades: Crie subclasses como Gerente, Assistente e Estagiário, e adicione métodos para calcular bônus de cada tipo de funcionário, com sobrecarga de métodos (polimorfismo).
+
+Princípios de POO a serem praticados nesses projetos:
+Encapsulamento:
+
+Controlar o acesso aos dados (uso de modificadores de acesso como private, public).
+
+Herança:
+
+Criar classes base e derivadas para reutilizar código e adicionar funcionalidades específicas.
+
+Polimorfismo:
+
+Permitir que métodos com o mesmo nome se comportem de maneira diferente dependendo do contexto.
+
+Abstração:
+
+Criar uma interface clara, ocultando detalhes desnecessários da implementação.

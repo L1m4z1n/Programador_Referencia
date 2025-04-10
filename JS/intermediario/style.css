@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #F2F2F2;
+}
+/*Estilo do Cabeçalho*/
+header {
+display:flex;
+flex-flow:row nowrap;
+justify-content:space-between;
+align-items:center;
+background-color: #003366;
+padding: 20px 20px;
+font-size: 25px;
+}
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+nav ul li a{
+margin: 10px;
+text-decoration: none;
+display: flex;
+flex-direction:column;
+}
+nav ul li {
+list-style-type:none;
+list-style-position:inside;
+display: inline-block;
+}
+a {
+color: white;
+font-weight: bold;
+}
+a:hover {
+text-decoration: underline;
+}
+
+form#pesquisar {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 300px;
+    gap: 8px;
+}
+
+form#pesquisar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+}
+
+form#pesquisar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 4px;
+}
+
+form#pesquisar button:hover {
+    color: rgb(134, 125, 125);
+}
+/**/
+main{
+padding: 20px 0px;
+}
+
+
+/*Estilo da Seção Sobre*/
+section#sobre{
+background-color: #E6F0FF;
+}
+
+
+/*Estilo da Seção Contato*/
+section#contato{
+background-color: #E6F0FF;
+}
+form#form {
+                /*centraliza*/
+                margin: 0 auto;
+                width: 400px;
+                /*Ver as bordas*/
+                padding: 1em;
+                border: 1px solid black;
+                border-radius: 1em;
+                background-color: aliceblue;
+            }
+            form div+div {
+                margin-top: 1em;
+            }
+            label{
+                display: inline-block;
+                width: 90px;
+                text-align: right;
+            }
+            input,textarea{
+                font: 1em arial;
+                width: 300px;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                border: 1px solid #999;
+            }
+            input:focus, textarea:focus {
+                /* Dar um pouco de destaque nos elementos ativos */
+                border-color: #000;
+            }
+            textarea {
+                /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+                vertical-align: top;
+    
+                /* Para dar espaço suficiente para digitar algum texto */
+                height: 5em;
+    
+                /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+                resize: vertical;
+            }
+            .button {
+      /* Para posicionar os botões para a mesma posição dos campos de texto */
+      padding-left: 90px; /* mesmo tamanho que os elementos do tipo label */
+    }
+    button {
+      /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+      margin-left: 0.5em;
+    }
+
+
+    /* Estilo do Footer */
+    footer{
+        background-color: #003366;
+        display:flex;
+flex-flow:row nowrap;
+justify-content:space-between;
+align-items:center;
+padding: 20px 20px;
+font-size: 25px;
+}
+nav {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+nav ul li a{
+margin: 10px;
+text-decoration: none;
+display: flex;
+flex-direction:column;
+}
+nav ul li {
+list-style-type:none;
+list-style-position:inside;
+display: inline-block;
+}
+a {
+color: white;
+font-weight: bold;
+}
+a:hover {
+text-decoration: underline;
+}
+    
+    
