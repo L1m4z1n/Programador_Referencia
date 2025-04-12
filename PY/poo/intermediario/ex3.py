@@ -3,31 +3,33 @@
 #Funcionalidades: Implemente métodos para marcar como lida, exibir a notificação e verificar se ela foi lida.
 from datetime import datetime
 class Notificacao:
-    def __init__(self,exibir,data,lido):
-        self.exibir=exibir
-        self.data=data
-        self.lido=lido
+    def __init__(self,mensagem):
+        self.mensagem=mensagem
+        self.data=datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        self.lido= False
 
-    def get_exibir(self):
-        return self.exibir
-    
-    def set_exibir(self):
-        if self.exibir == 1:
-            print(self.exibir)
+    def marca_como_lido(self,condicao):
+        if condicao == 1:
+            if not self.lido:
+                self.lido = True
+                self.data=datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+                print(f"A mensagem foi lida as {self.data}")
+            else:
+                print("Notificação já foi lida!")
         else:
-            return 0
+            print("Mensagem não lida!!")
 
-    def get_ler(self):
-        return self.ler 
+    def exibir_not(self):
+        status="Lido!" if self.lido else "Não lida!"
+        print(f"Mensagem: {self.mensagem} \nData: {self.data} \nStatus: {status}")
 
-    def set_ler(self):
-        if self.ler == self.lido:
-            self.data = datetime.now().date()
-            print("Notificação Vista as {self.data}!")
-        else:
-            print("Mensagem Disponivel!")
+n = Notificacao("Você tem uma notificação recebida!")
+n.exibir_not()
 
+try:
+    condicao=int(input("Digite '1' para marcar como lida ou outro número para ignorar:\n"))
+    n.marca_como_lido(condicao)
+except ValueError:
+    print("Insira um número válido!!")
 
-n = Notificacao("Olá","Date:","Mensagem Lida")
-n.get_ler()
-n.set_ler()
+n.exibir_not()
