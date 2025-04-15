@@ -1,0 +1,134 @@
+<!--
+CSS
+Criar um layout com Flexbox
+Crie um layout com 3 colunas usando o Flexbox (exemplo: uma barra lateral, conteúdo principal e uma barra inferior).
+
+Estilizar botões
+Crie um botão que mude de cor quando o mouse passar sobre ele (hover).
+
+Criar animação simples
+Crie uma animação que faça um elemento (ex: um quadrado) se mover de um lado da tela para o outro.
+
+Contador de cliques
+Crie um contador que aumenta toda vez que o usuário clica em um botão e exibe o número de cliques.(pendente)
+
+Alterar estilo com JavaScript
+Crie um script que altere a cor de fundo de um elemento quando o usuário clicar nele.(pendente)
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            background: #3498db;
+            padding: 20px;
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+            background: #ecf0f1;
+            padding: 20px;
+        }
+
+        .bottom-bar {
+            width: 20%;
+            background: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+
+        .quadrado{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: relative;
+            animation: moverhorizontal 0.5s linear 1s infinite alternate slidein;
+        }
+
+        @keyframes slidein {
+            from {
+                top: 0px;
+            } 
+            to {
+                top: 100px;
+            }
+        }
+
+        @keyframes moverhorizontal {
+            from {
+                left: 0px;
+            } 
+            to {
+                left: 100px;
+            }
+        }
+        .footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">Barra Lateral</div>
+        <div class="content">Conteúdo Principal
+            <button type="submit" id="troca">Hover</button>
+            <div class="quadrado"></div>
+        </div>
+        <div class="bottom-bar">Barra Inferior</div>
+    </div>
+    <div class="footer">Rodapé</div>
+
+    <script>
+        let iseinstein =true
+        let mh = true
+        document.getElementById("troca").addEventListener("click", function() {
+           let p1=document.querySelector(".content")
+           if (iseinstein) {
+            p1.style.backgroundColor = "#34495e";
+           } else {
+             p1.style.backgroundColor = "white"
+           }
+            iseinstein =! iseinstein 
+           let q = document.querySelector(".quadrado")
+           if (mh) {
+            q.style.animation="moverhorizontal 0.5s linear 1s infinite alternate"
+           }
+           else {
+            q.style.animation = "slidein 0.5s linear 1s infinite alternate"
+           }
+           mh=!mh
+        })
+    </script>
+</body>
+</html>
